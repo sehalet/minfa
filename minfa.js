@@ -36,11 +36,11 @@ function addInputFields() {
     maxInput.addEventListener("input", filterRows);
 }
 
-// Create a reusable input field
+// Create a reusable input field with default size
 function createInputField(placeholder, value) {
     const input = document.createElement("input");
     input.type = "number";
-    input.size = 6;
+    input.size = 6; // Same size as the original version
     input.value = value;
     input.style.marginRight = "5px";
     input.placeholder = placeholder;
