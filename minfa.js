@@ -77,6 +77,9 @@ function addKeyboardShortcuts() {
     document.addEventListener("keydown", event => {
         const keyMap = { "A": 0, "B": 1, "C": 2 };
         const buttonIndex = keyMap[event.key];
+        
+        console.log(`Basılan tuş: ${event.key}`);  // Hata ayıklama için log
+
         if (buttonIndex === undefined) return;
 
         rows.slice(1).forEach(row => {
